@@ -21,9 +21,15 @@
 }
 
 .stamp {
-    color: green;
-    border: solid 1px green;
-    padding: .5em 2em;
+    width: 100px;
     position: absolute;
-    top: 5%
+    top: 5%;
+    left: 2%;
+    display: none;
+}
+
+.stamp img {
+ 
+    width: 100%;
+    transform: rotate(-30deg);
 }

@@ -4,13 +4,13 @@ class Dog {
         Object.assign(this, data)
     }
     getDogHtml() {
-        const {avatar , name, age, bio} = this
+        const {avatar , name, age, bio, hasBeenLiked} = this
         // console.log(this.name)
         return `<div class="dog-individual">
 
                     <div class="dog-img">
-                        <div class="stamp">
-                           LIKE
+                        <div id="stamp" class="stamp">
+                            <img src="${ hasBeenLiked ? "/images/badge-like.png" : "/images/badge-nope.png"}" alt="w"  >
                         </div>
                         <img src="${avatar}" alt="${name}" width="100%" >
                         <div class="dog-details">
@@ -22,7 +22,7 @@ class Dog {
                     </div>
                     <div class="">
                         <button>x</button>
-                        <button>heart</button>
+                        <button id="like-btn">heart</button>
                     </div>
                
                 </div>`
