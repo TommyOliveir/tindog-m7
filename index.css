@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.dog-img {
+    position: relative;
+}
+
+.dog-individual {
+    width: 300px;
+    margin: auto;
+}
+
+.dog-details {
+    /* background: red; */
+    position: absolute;
+    top: 71%;
+    width: 100%;
+    color: #ffff;
+    padding: 0 .6em;
+}
+
+.stamp {
+    color: green;
+    border: solid 1px green;
+    padding: .5em 2em;
+    position: absolute;
+    top: 5%
+}
