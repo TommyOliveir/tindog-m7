@@ -4,7 +4,16 @@
 
 .dog-img {
     position: relative;
+    animation: fadeIn 1s;
+    transition: all 1s ease;
+ 
 }
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .dog-individual {
     width: 300px;
@@ -25,11 +34,40 @@
     position: absolute;
     top: 5%;
     left: 2%;
+    /* background: red; */
+}
+#stamp-like, #stamp-nope {
     display: none;
 }
 
-.stamp img {
- 
+#stamp-like img, #stamp-nope img {
     width: 100%;
     transform: rotate(-30deg);
+}    
+
+
+
+.tindog-btns {
+    /* background: red; */
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background: #f6f8fc;
+}
+
+.tindog-btn-item button{
+    background-color: #e8e9e8;
+    border: none;
+    color: white;
+    padding: 1em 1.1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    border-radius: 50%;
+    width: 50px;
 }
