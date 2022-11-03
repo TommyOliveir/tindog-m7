@@ -1,19 +1,28 @@
 * {
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
+h2, p {
+    margin: 0;
+}
 .dog-img {
     position: relative;
     animation: fadeIn 1s;
     transition: all 1s ease;
- 
+
 }
 
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .dog-individual {
     width: 300px;
@@ -23,10 +32,10 @@
 .dog-details {
     /* background: red; */
     position: absolute;
-    top: 71%;
+    top: 75%;
     width: 100%;
     color: #ffff;
-    padding: 0 .6em;
+    padding: 0em 1.3em;
 }
 
 .stamp {
@@ -36,14 +45,17 @@
     left: 2%;
     /* background: red; */
 }
-#stamp-like, #stamp-nope {
+
+#stamp-like,
+#stamp-nope {
     display: none;
 }
 
-#stamp-like img, #stamp-nope img {
+#stamp-like img,
+#stamp-nope img {
     width: 100%;
     transform: rotate(-30deg);
-}    
+}
 
 
 
@@ -58,7 +70,7 @@
     background: #f6f8fc;
 }
 
-.tindog-btn-item button{
+.tindog-btn-item button {
     background-color: #e8e9e8;
     border: none;
     color: white;
@@ -72,13 +84,20 @@
     width: 50px;
     cursor: pointer;
 }
+
 #like-btn {
-   
-color: #5ae5cb; 
+
+    color: #5ae5cb;
 }
 
-#like-btn:hover{
-background: #d9fdf7;
+#like-btn:hover {
+    background: #d9fdf7;
 
-color:#5ae5cb;
+    color: #5ae5cb;
+}
+
+#nope-btn:hover {
+    background: #f8e4e4;
+
+    color: #5ae5cb;
 }
