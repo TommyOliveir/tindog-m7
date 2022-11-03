@@ -67,7 +67,18 @@
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    margin: 4px 2px;
+    margin: 4px 6px;
     border-radius: 50%;
     width: 50px;
+    cursor: pointer;
+}
+#like-btn {
+   
+color: #5ae5cb; 
+}
+
+#like-btn:hover{
+background: #d9fdf7;
+
+color:#5ae5cb;
 }
